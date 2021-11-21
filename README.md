@@ -15,7 +15,7 @@ User can select from a list of currencies obtained from an external API to creat
 1. Get a free API Key at [https://fixer.io](https://fixer.io)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/nachobar3/MERN-stack-challenge.git
    ```
 3. Install NPM packages
    ```sh
