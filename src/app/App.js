@@ -30,7 +30,7 @@ class App extends Component {
 
 
     fetchSymbols() {
-        fetch('http://data.fixer.io/api/symbols?access_key=824e753b9d8f1bf170e5adf80e7788e9')
+        fetch('/api/symbols')
             .then(res => res.json())
             .then(data => {
                 let selectSymbols = []
@@ -107,7 +107,7 @@ class App extends Component {
        
     };
 
-    
+
     render () {
         return (
              

@@ -14,6 +14,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api/pairs', require('./routes/pairs.routes'))
+app.use('/api/symbols', require('./routes/symbols.routes'))
 
 // Static files
 app.use(express.static(path.join(__dirname + '/public')))
