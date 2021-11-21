@@ -23,7 +23,7 @@ User can select from a list of currencies obtained from an external API to creat
    ```
 4. Enter your API in `.env`
    ```js
-APIKEY=ENTER YOUR API KEY;
+APIKEY=ENTER YOUR API KEY
    ```
    
    
