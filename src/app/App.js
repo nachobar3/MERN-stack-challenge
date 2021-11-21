@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Select from 'react-select';
 
 
-
 class App extends Component {
 
     constructor() {
@@ -21,8 +20,6 @@ class App extends Component {
         this.changeCoin = this.changeCoin.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.addPair = this.addPair.bind(this);
-        
-
     }
 
 
@@ -75,6 +72,7 @@ class App extends Component {
             });
     }
 
+
     deletePair(id) {
     console.log("deleting " + id)
         fetch('api/pairs/' + id, {
@@ -90,7 +88,8 @@ class App extends Component {
             M.toast({html: 'Pair deleted'})
             this.fetchPairs();
         });
- }
+    };
+
 
     handleChange(e) {
         console.log(e)
@@ -98,15 +97,17 @@ class App extends Component {
         this.setState({
             [name]: value
         })
-    }
+    };
+
 
     changeCoin(name, option) {
         console.log(option)
         const { label, value } = option;
         this.setState({[name]: value})
        
-    }
+    };
 
+    
     render () {
         return (
              
